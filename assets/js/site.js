@@ -167,22 +167,64 @@
   });
 
   /* ---------- carrossel ---------- */
+  // Carrossel em loop: no fim volta ao início e vice-versa (nunca trava).
   $$('[data-carrossel]').forEach((c) => {
     const trilho = $('.carrossel__trilho', c);
     const [ant, prox] = $$('.carrossel__seta', c);
-    const atualiza = () => {
-      const rola = trilho.scrollWidth > trilho.clientWidth + 4;
-      c.classList.toggle('tem-rolagem', rola);
-      ant.disabled = trilho.scrollLeft <= 4;
-      prox.disabled = trilho.scrollLeft + trilho.clientWidth >= trilho.scrollWidth - 4;
+    const atualiza = () => c.classList.toggle('tem-rolagem', trilho.scrollWidth > trilho.clientWidth + 4);
+    const passo = () => {
+      const p = trilho.firstElementChild;
+      const gap = parseFloat(getComputedStyle(trilho).columnGap) || 20;
+      return p ? p.getBoundingClientRect().width + gap : 300;
     };
-    const passo = () => (trilho.firstElementChild ? trilho.firstElementChild.getBoundingClientRect().width + 20 : 300);
-    [ant, prox].forEach((b) => b.addEventListener('click', () => trilho.scrollBy({ left: passo() * Number(b.dataset.dir), behavior: reduz ? 'auto' : 'smooth' })));
-    trilho.addEventListener('scroll', atualiza, { passive: true });
+    const vai = (dir) => {
+      const max = trilho.scrollWidth - trilho.clientWidth;
+      const comp = { behavior: reduz ? 'auto' : 'smooth' };
+      if (dir > 0 && trilho.scrollLeft >= max - 4) trilho.scrollTo({ left: 0, ...comp });
+      else if (dir < 0 && trilho.scrollLeft <= 4) trilho.scrollTo({ left: max, ...comp });
+      else trilho.scrollBy({ left: passo() * dir, ...comp });
+    };
+    [ant, prox].forEach((b) => b.addEventListener('click', () => vai(Number(b.dataset.dir))));
     addEventListener('resize', atualiza);
     c.__atualiza = atualiza;
     atualiza();
   });
+
+  /* ---------- avaliações: "Ler mais" + popup com setas em loop ---------- */
+  const modal = $('[data-avaliacoes-modal]');
+  if (modal) {
+    const slides = $$('.av-modal__slide', modal);
+    const contador = $('.av-modal__contador', modal);
+    let atual = 0, ultimoFoco = null;
+    const mostra = (i) => {
+      atual = (i + slides.length) % slides.length;
+      slides.forEach((s, k) => { s.classList.toggle('is-ativo', k === atual); s.setAttribute('aria-hidden', String(k !== atual)); });
+      if (contador) contador.textContent = `${atual + 1} de ${slides.length}`;
+    };
+    const abre = (i) => {
+      ultimoFoco = document.activeElement;
+      mostra(i);
+      modal.showModal();
+      doc.style.overflow = 'hidden';
+    };
+    modal.addEventListener('close', () => { doc.style.overflow = ''; ultimoFoco && ultimoFoco.focus(); });
+    $$('[data-av-dir]', modal).forEach((b) => b.addEventListener('click', () => mostra(atual + Number(b.dataset.avDir))));
+    $$('[data-av-fechar]', modal).forEach((b) => b.addEventListener('click', () => modal.close()));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+    modal.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') mostra(atual + 1);
+      if (e.key === 'ArrowLeft') mostra(atual - 1);
+    });
+    // só mostra "Ler mais" quando o texto foi cortado
+    const marca = () => $$('[data-av-abrir]').forEach((b) => {
+      const q = b.closest('.greview').querySelector('blockquote p');
+      b.hidden = q.scrollHeight <= q.clientHeight + 2;
+    });
+    $$('[data-av-abrir]').forEach((b) => b.addEventListener('click', () => abre(Number(b.dataset.avAbrir))));
+    marca();
+    addEventListener('resize', marca);
+    document.fonts && document.fonts.ready.then(marca);
+  }
 
   /* ---------- revelar ao rolar + contadores ---------- */
   const reveals = $$('.revela');
