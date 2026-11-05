@@ -210,11 +210,6 @@ mark{background:linear-gradient(transparent 58%,rgba(255,123,0,.55) 58%,rgba(255
 .marquee img{height:44px;width:auto;max-width:160px;object-fit:contain;filter:brightness(0);opacity:.42;transition:opacity .3s}
 .marquee li:hover img{opacity:.85}
 @keyframes marquee{to{transform:translateX(-100%)}}
-@media (min-width:901px){
-  .marquee{-webkit-mask-image:none;mask-image:none;justify-content:center}
-  .marquee__grupo{animation:none;flex-wrap:wrap;justify-content:center;row-gap:28px;padding-inline:24px;min-width:0;width:100%;max-width:var(--container);margin-inline:auto}
-  .marquee__grupo[aria-hidden]{display:none}
-}
 
 /* ---------- abas ---------- */
 .abas{position:relative;display:flex;width:max-content;max-width:100%;margin:0 auto 40px;padding:6px;border-radius:var(--r-pill);background:var(--branco);border:1px solid var(--linha);box-shadow:var(--sombra-1);overflow-x:auto;scrollbar-width:none}
