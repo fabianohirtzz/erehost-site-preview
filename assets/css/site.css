@@ -389,7 +389,21 @@ mark{background:linear-gradient(transparent 58%,rgba(255,123,0,.55) 58%,rgba(255
 .rodape__corgi{width:86%;margin-top:4%}
 .rodape__base{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:24px 32px;font-size:13px;color:var(--mudo)}
 .rodape__base ul{display:flex;flex-wrap:wrap;gap:6px 20px}
-.rodape__base a:hover{color:var(--tinta);text-decoration:underline;text-underline-offset:3px}
+.rodape__base ul a:hover{color:var(--tinta);text-decoration:underline;text-underline-offset:3px}
+
+/* assinatura Freela In Home */
+.rodape__assina{flex-basis:100%;order:-1;display:flex;justify-content:center;padding-bottom:16px;margin-bottom:4px;border-bottom:1px solid var(--linha)}
+.assinatura{display:inline-flex;align-items:center;gap:12px;padding:6px 18px 6px 6px;border-radius:var(--r-pill);background:var(--creme);border:1px solid var(--linha);color:var(--texto);line-height:1.3;transition:border-color .3s,box-shadow .3s var(--ease),transform .3s var(--ease-mola)}
+.assinatura:hover{border-color:rgba(255,123,0,.45);box-shadow:var(--sombra-1);transform:translateY(-2px)}
+.assinatura__corgi{position:relative;width:40px;height:40px;border-radius:50%;overflow:hidden;background:var(--laranja-lavado);flex:none}
+.assinatura__corgi img{position:absolute;width:58px;max-width:none;left:-17px;top:-21px}
+.assinatura__txt{display:flex;flex-direction:column;font-size:12px}
+.assinatura__txt strong{font-size:13px;font-weight:800;letter-spacing:.02em;color:var(--tinta)}
+.assinatura:hover .assinatura__txt span{color:var(--laranja-tinta)}
+.assinatura__foguete{position:relative;font-size:18px;display:inline-block;transition:transform .7s var(--ease)}
+.assinatura__foguete::after{content:"";position:absolute;right:70%;top:70%;width:0;height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,var(--laranja));transform:rotate(-45deg);transform-origin:right center;transition:width .7s var(--ease)}
+.assinatura:hover .assinatura__foguete{transform:translate(10px,-10px)}
+.assinatura:hover .assinatura__foguete::after{width:26px}
 
 /* ---------- WhatsApp flutuante ---------- */
 .wpp{position:fixed;right:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:12px}
