@@ -259,6 +259,19 @@
     }
   });
 
+  /* ---------- índice da leitura: destaca a seção atual ---------- */
+  $$('[data-indice]').forEach((ind) => {
+    const links = $$('a[href^="#"]', ind);
+    const alvos = links.map((l) => document.getElementById(l.getAttribute('href').slice(1))).filter(Boolean);
+    if (!alvos.length || !('IntersectionObserver' in window)) return;
+    const marca = (id) => links.forEach((l) => l.classList.toggle('is-atual', l.getAttribute('href') === '#' + id));
+    const io = new IntersectionObserver((ents) => {
+      const vis = ents.filter((e) => e.isIntersecting).sort((x, y) => x.boundingClientRect.top - y.boundingClientRect.top);
+      if (vis.length) marca(vis[0].target.id);
+    }, { rootMargin: '-110px 0px -65% 0px' });
+    alvos.forEach((el) => io.observe(el));
+  });
+
   /* ---------- revelar ao rolar + contadores ---------- */
   const reveals = $$('.revela');
   const grupos = new Map();
