@@ -18,7 +18,7 @@
 <link rel="icon" href="/erehost-site-preview/assets/img/logo/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/erehost-site-preview/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/erehost-site-preview/assets/fonts/inter-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/erehost-site-preview/assets/css/site.css?v=1794436983">
+<link rel="stylesheet" href="/erehost-site-preview/assets/css/site.css?v=1794438471">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"EreHost","legalName":"EreHost Hospedagem de Site LTDA","url":"https://erehost.com.br","logo":"https://erehost.com.br/assets/img/logo/erehost.svg","taxID":"48.516.019/0001-11","address":{"@type":"PostalAddress","addressLocality":"Erechim","addressRegion":"RS","addressCountry":"BR"},"contactPoint":{"@type":"ContactPoint","telephone":"+5554993703696","contactType":"customer service","availableLanguage":"Portuguese"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://erehost.com.br/"},{"@type":"ListItem","position":2,"name":"Hospedagem para Agências","item":"https://erehost.com.br/agencias"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Hospedagem para Agências (Cloud Sites)","serviceType":"Hospedagem de sites para agências","provider":{"@type":"Organization","name":"EreHost"},"areaServed":"BR","description":"Hospedagem para agências e desenvolvedores: 100 ou 200 sites de clientes em nuvem, otimizados para WordPress, com e-mail profissional grátis, suporte prioritário 24/7 e gerente de contas exclusivo.","offers":[{"@type":"Offer","name":"Agência 100 GB","price":"239.80","priceCurrency":"BRL","url":"https://erehost.com.br/agencias#planos"},{"@type":"Offer","name":"Agência 200 GB","price":"439.60","priceCurrency":"BRL","url":"https://erehost.com.br/agencias#planos"}]}</script>
@@ -146,48 +146,84 @@
 </div>
 
 <main id="conteudo">
-
-<!-- HERO -->
-<section class="phero">
-  <div class="container phero__grade">
-    <div class="phero__texto">
-      <nav class="migalha revela" aria-label="Você está em">
-        <ol><li><a href="/erehost-site-preview/">Início</a></li><li aria-current="page">Hospedagem para Agências</li></ol>
-      </nav>
-      <h1 class="phero__titulo revela">Hospedagem para agências: <mark>mais tempo</mark> para atender os seus clientes</h1>
-      <p class="phero__sub revela">Gerencie de forma prática e rápida os sites e e-mails de até 200 clientes em nuvem, com servidores otimizados para WordPress, suporte prioritário 24/7 e um gerente de contas exclusivo para a sua agência.</p>
-      <div class="hero__ctas revela">
-        <a class="botao botao--p botao--g" href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Tenho%20uma%20ag%C3%AAncia%20e%20quero%20conhecer%20os%20planos%20Cloud%20Sites%20da%20EreHost." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>Quero ser parceiro</a>
-        <a class="botao botao--fantasma botao--g" href="#planos">Ver planos <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <ul class="phero__destaques revela">
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Deixe o gerenciamento com a EreHost</li>
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Suporte prioritário 24/7</li>
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Otimizado para WordPress</li>
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Datacenter nacional Tier III</li>
+
+<!-- HERO -->
+<section class="phero">
+  <div class="container phero__grade">
+    <div class="phero__texto">
+      <nav class="migalha revela" aria-label="Você está em">
+        <ol><li><a href="/erehost-site-preview/">Início</a></li><li aria-current="page">Hospedagem para Agências</li></ol>
+      </nav>
+      <h1 class="phero__titulo revela">Hospedagem para agências: <mark>mais tempo</mark> para atender os seus clientes</h1>
+      <p class="phero__sub revela">Gerencie de forma prática e rápida os sites e e-mails de até 200 clientes em nuvem, com servidores otimizados para WordPress, suporte prioritário 24/7 e um gerente de contas exclusivo para a sua agência.</p>
+      <div class="hero__ctas revela">
+        <a class="botao botao--p botao--g" href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Tenho%20uma%20ag%C3%AAncia%20e%20quero%20conhecer%20os%20planos%20Cloud%20Sites%20da%20EreHost." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>Quero ser parceiro</a>
+        <a class="botao botao--fantasma botao--g" href="#planos">Ver planos <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <ul class="phero__destaques revela">
+        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Deixe o gerenciamento com a EreHost</li>
+        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Suporte prioritário 24/7</li>
+        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Otimizado para WordPress</li>
+        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Datacenter nacional Tier III</li>
+      </ul>
+    </div>
+
+    <!-- Agências: mural de sites de clientes no ar, corgi atento -->
+<div class="hv hv--mural revela" aria-hidden="true">
+  <div class="hv-mural__topo"><span class="pulso"></span><strong>124 sites no ar</strong><span>Painel da sua agência</span></div>
+  <ul class="hv-mural__grade">
+        <li style="--cor:#ff7b00;--i:0">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">loja.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#1fa35b;--i:1">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">clinica.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#373435;--i:2">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">imobiliaria.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#3b82c4;--i:3">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">escola.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#c2410c;--i:4">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">padaria.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#6b4f3a;--i:5">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">advocacia.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#b35500;--i:6">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">academia.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#1fa35b;--i:7">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">restaurante.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
+        <li style="--cor:#373435;--i:8">
+      <span class="hv-mural__mini"><i></i><i></i><i></i></span>
+      <span class="hv-mural__nome">studio.com.br</span>
+      <span class="hv-mural__ok"><span class="pulso"></span></span>
+    </li>
       </ul>
-    </div>
-
-    <div class="pvis revela" aria-hidden="true">
-      <img class="pvis__corgi" src="/erehost-site-preview/assets/img/mascote/corgi-sentado.svg" alt="" width="84" height="170">
-      <div class="pvis__barra"><span></span><span></span><span></span><em><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Painel da agência · 124 sites</em></div>
-      <div class="pvis__corpo">
-        <ul class="pvis__linhas">
-          <li><span class="pvis__ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><span class="pvis__rot">loja-do-cliente.com.br<small>WordPress · e-mail ativo</small></span><span class="pvis__val pvis__val--ok"><span class="pulso"></span>no ar</span></li>
-          <li><span class="pvis__ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><span class="pvis__rot">clinica-do-cliente.com.br<small>WordPress · WooCommerce</small></span><span class="pvis__val pvis__val--ok"><span class="pulso"></span>no ar</span></li>
-          <li><span class="pvis__ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><span class="pvis__rot">imobiliaria-do-cliente.com.br<small>Elementor · e-mail ativo</small></span><span class="pvis__val pvis__val--ok"><span class="pulso"></span>no ar</span></li>
-          <li><span class="pvis__ic"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span class="pvis__rot">Seu gerente de contas<small>contato direto pelo WhatsApp</small></span><span class="pvis__val">online</span></li>
-        </ul>
-        <div class="pvis__ttfb">
-          <span>tempo de resposta</span>
-          <strong>14ms</strong>
-          <span class="pvis__ttfb-ok"><span class="pulso"></span>em todos os sites</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+  <img class="hv-mural__corgi" src="/erehost-site-preview/assets/img/mascote/corgi-atento.svg" alt="" width="160" height="150">
+  <div class="hv-chip hv-chip--f"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span><strong>Seu gerente de contas</strong><small>online agora</small></span></div>
+</div>
+  </div>
+</section>
+
 <section class="planos secao secao--creme" id="planos" aria-labelledby="planos-titulo">
   <div class="container">
     <header class="secao__cab secao__cab--centro">
@@ -252,25 +288,25 @@
     </div>
       </div>
 </section>
-
-<!-- GERENTE DE CONTAS -->
-<section class="secao gerente-sec" aria-labelledby="gerente-titulo">
-  <div class="container gerente">
-    <div class="gerente__texto">
-      <h2 id="gerente-titulo" class="secao__titulo">Contato direto com o seu gerente de contas</h2>
-      <p class="secao__sub">Não seja apenas mais um cliente entre tantos no mercado de hospedagem. Você é uma agência e deve ser tratado como tal.</p>
-      <p>Sua agência terá um gerente de contas exclusivo e poderá obter suporte sobre o programa e os nossos produtos sempre que precisar, sem abrir chamado e sem fila.</p>
-      <a class="botao botao--escuro" href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Tenho%20uma%20ag%C3%AAncia%20e%20quero%20conhecer%20os%20planos%20Cloud%20Sites%20da%20EreHost." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>Converse com a gente</a>
-    </div>
-    <ul class="gerente__lista">
-      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg></span><strong>Suporte prioritário 24/7</strong><span>Sua agência passa na frente quando um cliente precisa de ajuda.</span></li>
-      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><strong>Hospedagem em nuvem</strong><span>Servidores em nuvem alocados em infraestrutura Tier III no Brasil.</span></li>
-      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><strong>Tráfego ilimitado</strong><span>Sem susto na fatura quando a campanha de um cliente bomba.</span></li>
-      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg></span><strong>Migração dos seus clientes</strong><span>Transferências gratuitas incluídas e o restante em lotes combinados com você.</span></li>
-    </ul>
-  </div>
-</section>
-
+
+<!-- GERENTE DE CONTAS -->
+<section class="secao gerente-sec" aria-labelledby="gerente-titulo">
+  <div class="container gerente">
+    <div class="gerente__texto">
+      <h2 id="gerente-titulo" class="secao__titulo">Contato direto com o seu gerente de contas</h2>
+      <p class="secao__sub">Não seja apenas mais um cliente entre tantos no mercado de hospedagem. Você é uma agência e deve ser tratado como tal.</p>
+      <p>Sua agência terá um gerente de contas exclusivo e poderá obter suporte sobre o programa e os nossos produtos sempre que precisar, sem abrir chamado e sem fila.</p>
+      <a class="botao botao--escuro" href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Tenho%20uma%20ag%C3%AAncia%20e%20quero%20conhecer%20os%20planos%20Cloud%20Sites%20da%20EreHost." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>Converse com a gente</a>
+    </div>
+    <ul class="gerente__lista">
+      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg></span><strong>Suporte prioritário 24/7</strong><span>Sua agência passa na frente quando um cliente precisa de ajuda.</span></li>
+      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><strong>Hospedagem em nuvem</strong><span>Servidores em nuvem alocados em infraestrutura Tier III no Brasil.</span></li>
+      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><strong>Tráfego ilimitado</strong><span>Sem susto na fatura quando a campanha de um cliente bomba.</span></li>
+      <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg></span><strong>Migração dos seus clientes</strong><span>Transferências gratuitas incluídas e o restante em lotes combinados com você.</span></li>
+    </ul>
+  </div>
+</section>
+
 <section class="secao secao--creme comparativo" id="comparativo" aria-labelledby="comparativo-titulo">
   <div class="container">
     <header class="secao__cab secao__cab--centro">
@@ -375,7 +411,7 @@
     </div>
       </div>
 </section>
-
+
 <section class="secao secao--creme indica-sec" id="indicacao" aria-labelledby="indica-titulo">
   <div class="container">
     <div class="indica">
@@ -395,7 +431,7 @@
     </div>
   </div>
 </section>
-
+
 <section class="secao faq-sec " id="perguntas" aria-labelledby="faq-titulo">
   <div class="container faq">
     <div class="faq__lado">
@@ -439,7 +475,7 @@
   </div>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quantos sites cabem nos planos para agências?","acceptedAnswer":{"@type":"Answer","text":"O plano Agência 100 GB comporta 100 sites e o Agência 200 GB comporta 200 sites de clientes, cada um com 2 núcleos de CPU e 2 GB de RAM. O sistema permite passar um pouco do número nominal quando necessário."}},{"@type":"Question","name":"Cada cliente tem o próprio painel?","acceptedAnswer":{"@type":"Answer","text":"Você gerencia todos os sites e e-mails dos seus clientes em um painel de controle prático, sem precisar entrar em uma conta diferente para cada um."}},{"@type":"Question","name":"O que faz o gerente de contas?","acceptedAnswer":{"@type":"Answer","text":"É uma pessoa da EreHost dedicada à sua agência: acompanha seus projetos, tira dúvidas sobre os produtos e ajuda a planejar migrações e crescimento. Contato direto, sem fila."}},{"@type":"Question","name":"O e-mail profissional dos clientes está incluso?","acceptedAnswer":{"@type":"Answer","text":"Sim. E-mail profissional grátis para os domínios dos seus clientes, com webmail e configuração simples no celular."}},{"@type":"Question","name":"E os backups?","acceptedAnswer":{"@type":"Answer","text":"Os planos para agências podem contar com backups diários como adicional de R$ 100,00."}},{"@type":"Question","name":"Vocês migram os sites dos meus clientes?","acceptedAnswer":{"@type":"Answer","text":"Sim. Nos planos para agências, a migração gratuita inclui até 5 transferências entre cPanels e 2 migrações manuais, somando até 30 GB de dados. Acima disso, a equipe faz um orçamento para migrar o restante em lotes, combinando com você a melhor janela para cada cliente."}},{"@type":"Question","name":"Os servidores são otimizados para WordPress?","acceptedAnswer":{"@type":"Answer","text":"São. LiteSpeed com LiteSpeed Cache, PHP 8.5 e HTTPS ilimitado grátis, a mesma base que entrega TTFB médio de 14ms nos demais planos."}}]}</script>
 </section>
-
+
 <section class="secao migracao-sec" id="migracao" aria-labelledby="migracao-titulo">
   <div class="container">
     <div class="migracao">
@@ -459,7 +495,7 @@
     </div>
   </div>
 </section>
-
+
 </main>
 
 <footer class="rodape">
