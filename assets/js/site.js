@@ -190,41 +190,74 @@
     atualiza();
   });
 
-  /* ---------- avaliações: "Ler mais" + popup com setas em loop ---------- */
-  const modal = $('[data-avaliacoes-modal]');
-  if (modal) {
-    const slides = $$('.av-modal__slide', modal);
-    const contador = $('.av-modal__contador', modal);
-    let atual = 0, ultimoFoco = null;
-    const mostra = (i) => {
-      atual = (i + slides.length) % slides.length;
-      slides.forEach((s, k) => { s.classList.toggle('is-ativo', k === atual); s.setAttribute('aria-hidden', String(k !== atual)); });
-      if (contador) contador.textContent = `${atual + 1} de ${slides.length}`;
+  /* ---------- depoimentos: abas com troca automática ---------- */
+  // Troca sozinha a cada 9s só enquanto a seção está na tela; pausa no hover/foco;
+  // para de vez quando a pessoa escolhe um cliente. Sem troca automática com reduced-motion.
+  $$('[data-depo]').forEach((d) => {
+    const abas = $$('[role="tab"]', d);
+    const itens = abas.map((a) => document.getElementById(a.getAttribute('aria-controls')));
+    const CICLO = 9000;
+    let atual = 0, timer = null, visivel = false, parado = reduz;
+    const agenda = () => {
+      clearTimeout(timer);
+      d.classList.remove('is-rodando', 'is-pausado');
+      if (parado || !visivel) return;
+      void d.offsetWidth; // reinicia a barrinha de tempo
+      d.style.setProperty('--depo-ciclo', CICLO + 'ms');
+      d.classList.add('is-rodando');
+      timer = setTimeout(() => mostra(atual + 1), CICLO);
     };
-    const abre = (i) => {
-      ultimoFoco = document.activeElement;
-      mostra(i);
-      modal.showModal();
-      doc.style.overflow = 'hidden';
+    const mostra = (i, focar) => {
+      atual = (i + abas.length) % abas.length;
+      abas.forEach((a, k) => {
+        const sel = k === atual;
+        a.setAttribute('aria-selected', String(sel));
+        a.tabIndex = sel ? 0 : -1;
+        itens[k].classList.toggle('is-ativo', sel);
+        itens[k].inert = !sel;
+      });
+      if (focar) abas[atual].focus();
+      agenda();
     };
-    modal.addEventListener('close', () => { doc.style.overflow = ''; ultimoFoco && ultimoFoco.focus(); });
-    $$('[data-av-dir]', modal).forEach((b) => b.addEventListener('click', () => mostra(atual + Number(b.dataset.avDir))));
-    $$('[data-av-fechar]', modal).forEach((b) => b.addEventListener('click', () => modal.close()));
-    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
-    modal.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') mostra(atual + 1);
-      if (e.key === 'ArrowLeft') mostra(atual - 1);
+    abas.forEach((a, i) => {
+      a.addEventListener('click', () => { parado = true; mostra(i); });
+      a.addEventListener('keydown', (e) => {
+        let n = null;
+        if (e.key === 'ArrowRight') n = i + 1;
+        if (e.key === 'ArrowLeft') n = i - 1;
+        if (e.key === 'Home') n = 0;
+        if (e.key === 'End') n = abas.length - 1;
+        if (n !== null) { e.preventDefault(); parado = true; mostra(n, true); }
+      });
     });
-    // só mostra "Ler mais" quando o texto foi cortado
-    const marca = () => $$('[data-av-abrir]').forEach((b) => {
-      const q = b.closest('.greview').querySelector('blockquote p');
-      b.hidden = q.scrollHeight <= q.clientHeight + 2;
-    });
-    $$('[data-av-abrir]').forEach((b) => b.addEventListener('click', () => abre(Number(b.dataset.avAbrir))));
-    marca();
-    addEventListener('resize', marca);
-    document.fonts && document.fonts.ready.then(marca);
-  }
+    // pausa sem perder o progresso: a barrinha congela e o tempo restante é retomado
+    let inicio = 0, resta = CICLO;
+    const pausa = () => {
+      if (!d.classList.contains('is-rodando') || d.classList.contains('is-pausado')) return;
+      clearTimeout(timer);
+      resta = Math.max(400, resta - (performance.now() - inicio));
+      d.classList.add('is-pausado');
+    };
+    const segue = () => {
+      if (!d.classList.contains('is-pausado') || d.matches(':hover') || d.contains(document.activeElement)) return;
+      d.classList.remove('is-pausado');
+      inicio = performance.now();
+      timer = setTimeout(() => mostra(atual + 1), resta);
+    };
+    const agendaOrig = agenda;
+    d.addEventListener('mouseenter', pausa);
+    d.addEventListener('mouseleave', segue);
+    d.addEventListener('focusin', pausa);
+    d.addEventListener('focusout', () => setTimeout(segue, 0));
+    // marca o início de cada ciclo para o cálculo do tempo restante
+    d.addEventListener('animationstart', (e) => { if (e.animationName === 'depo-tempo') { inicio = performance.now(); resta = CICLO; } });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([en]) => {
+        visivel = en.isIntersecting;
+        if (visivel) agendaOrig(); else { clearTimeout(timer); d.classList.remove('is-rodando', 'is-pausado'); }
+      }, { threshold: .35 }).observe(d);
+    }
+  });
 
   /* ---------- revelar ao rolar + contadores ---------- */
   const reveals = $$('.revela');
