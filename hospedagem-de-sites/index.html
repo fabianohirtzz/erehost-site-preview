@@ -18,7 +18,7 @@
 <link rel="icon" href="/erehost-site-preview/assets/img/logo/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/erehost-site-preview/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/erehost-site-preview/assets/fonts/inter-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/erehost-site-preview/assets/css/site.css?v=1794438471">
+<link rel="stylesheet" href="/erehost-site-preview/assets/css/site.css?v=1794438900">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"EreHost","legalName":"EreHost Hospedagem de Site LTDA","url":"https://erehost.com.br","logo":"https://erehost.com.br/assets/img/logo/erehost.svg","taxID":"48.516.019/0001-11","address":{"@type":"PostalAddress","addressLocality":"Erechim","addressRegion":"RS","addressCountry":"BR"},"contactPoint":{"@type":"ContactPoint","telephone":"+5554993703696","contactType":"customer service","availableLanguage":"Portuguese"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://erehost.com.br/"},{"@type":"ListItem","position":2,"name":"Hospedagem de Sites","item":"https://erehost.com.br/hospedagem-de-sites"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Hospedagem de Sites EreHost","description":"Hospedagem de sites a partir de R$ 24,90/mês com LiteSpeed, HTTPS grátis, e-mail profissional, backups automáticos, servidores no Brasil e migração gratuita em até 24 horas.","brand":{"@type":"Brand","name":"EreHost"},"offers":{"@type":"AggregateOffer","priceCurrency":"BRL","lowPrice":"24.90","highPrice":"230.93","offerCount":6,"offers":[{"@type":"Offer","name":"Starter","price":"24.90","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-de-sites#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Plus","price":"35.91","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-de-sites#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Premium","price":"59.41","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-de-sites#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Starter","price":"90.93","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-de-sites#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Premium","price":"153.86","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-de-sites#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Enterprise","price":"230.93","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-de-sites#planos","availability":"https://schema.org/InStock"}]}}</script>
@@ -417,52 +417,93 @@
   </div>
 </section>
 
-<!-- RECURSOS (bento) -->
-<section class="secao secao--creme recursos-sec" aria-labelledby="recursos-titulo">
-  <div class="container">
-    <header class="secao__cab">
+<!-- RECURSOS: layout próprio de cada página -->
+<!-- Sites: lista de recursos + painel com o destaque do recurso escolhido -->
+<section class="secao secao--creme rec-sec" aria-labelledby="recursos-titulo">
+  <div class="container rec-abas">
+    <div class="rec-abas__lado">
       <h2 id="recursos-titulo" class="secao__titulo">Tudo o que seu site precisa, já incluso</h2>
-    </header>
-    <ul class="bento">
-                  <li class="bento__item bento__item--grande">
-        <span class="bento__metrica">14ms<small>TTFB médio</small></span>        <h3>TTFB de 14ms</h3>
+      <p class="secao__sub">Nada de pagar à parte pelo básico. Escolha um item para ver o que vem no plano.</p>
+      <div class="rec-abas__lista" role="tablist" aria-label="Recursos incluídos" aria-orientation="vertical" data-abas="recursos">
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-velocidade" aria-controls="rec-velocidade" aria-selected="true" tabindex="0"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><span>Velocidade de verdade</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-seguranca" aria-controls="rec-seguranca" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><span>Segurança total</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-suporte" aria-controls="rec-suporte" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg><span>Suporte dedicado</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-backup" aria-controls="rec-backup" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg><span>Backups automáticos</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-https" aria-controls="rec-https" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>HTTPS ilimitado grátis</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-email" aria-controls="rec-email" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>E-mail profissional</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-cpanel" aria-controls="rec-cpanel" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>Painel cPanel</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-php" aria-controls="rec-php" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg><span>PHP 8.5</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <button class="rec-abas__aba" role="tab" type="button" id="rec-aba-brasil" aria-controls="rec-brasil" aria-selected="false" tabindex="-1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2.5a7 7 0 0 1 7 7c0 5.3-7 11.5-7 11.5z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Servidores no Brasil</span><svg class="ic rec-abas__seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+              </div>
+    </div>
+    <div class="rec-abas__palco">
+            <div class="rec-painel" role="tabpanel" id="rec-velocidade" aria-labelledby="rec-aba-velocidade">
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+        <p class="rec-painel__fato"><strong>14ms</strong><span>tempo médio de resposta</span></p>
+        <h3>Velocidade de verdade</h3>
         <p>Servidores LiteSpeed com cache nativo respondem em milissegundos. Resposta até 3x mais rápida com a infraestrutura EreHost.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>        <h3>Segurança total</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-seguranca" aria-labelledby="rec-aba-seguranca" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <p class="rec-painel__fato"><strong>Imunify360</strong><span>proteção ativa 24 horas</span></p>
+        <h3>Segurança total</h3>
         <p>Imunify360 e CloudLinux protegem seus sites e visitantes contra malware, ataques de força bruta e contas vizinhas.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg></span>        <h3>Suporte dedicado</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-suporte" aria-labelledby="rec-aba-suporte" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg></span>
+        <p class="rec-painel__fato"><strong>Gente</strong><span>de verdade no WhatsApp</span></p>
+        <h3>Suporte dedicado</h3>
         <p>Especialistas que te auxiliam e te socorrem quando estiver na parte difícil. Atendimento humano pelo WhatsApp.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></span>        <h3>Backups automáticos</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-backup" aria-labelledby="rec-aba-backup" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></span>
+        <p class="rec-painel__fato"><strong>Automático</strong><span>backup sem você lembrar</span></p>
+        <h3>Backups automáticos</h3>
         <p>Cópias de segurança feitas sem você lembrar, para proteger os seus dados de desastres ou alterações inesperadas.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>        <h3>HTTPS ilimitado grátis</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-https" aria-labelledby="rec-aba-https" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+        <p class="rec-painel__fato"><strong>R$ 0</strong><span>pelo certificado SSL</span></p>
+        <h3>HTTPS ilimitado grátis</h3>
         <p>Certificado SSL emitido e renovado automaticamente para todos os seus domínios e subdomínios.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>        <h3>E-mail profissional</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-email" aria-labelledby="rec-aba-email" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <p class="rec-painel__fato"><strong>@seusite</strong><span>e-mail no seu domínio</span></p>
+        <h3>E-mail profissional</h3>
         <p>Contas como contato@suaempresa.com.br, com webmail, antispam e configuração simples no celular.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span>        <h3>Painel cPanel</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-cpanel" aria-labelledby="rec-aba-cpanel" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span>
+        <p class="rec-painel__fato"><strong>cPanel</strong><span>painel de controle</span></p>
+        <h3>Painel cPanel</h3>
         <p>O painel mais usado do mundo para gerenciar arquivos, e-mails, bancos de dados e domínios sem complicação.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></span>        <h3>PHP 8.5</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-php" aria-labelledby="rec-aba-php" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></span>
+        <p class="rec-painel__fato"><strong>8.5</strong><span>versão do PHP</span></p>
+        <h3>PHP 8.5</h3>
         <p>Sempre na versão mais recente e estável, com troca de versão pelo painel quando o seu projeto precisar.</p>
-      </li>
-            <li class="bento__item">
-        <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2.5a7 7 0 0 1 7 7c0 5.3-7 11.5-7 11.5z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>        <h3>Servidores no Brasil</h3>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+            <div class="rec-painel" role="tabpanel" id="rec-brasil" aria-labelledby="rec-aba-brasil" hidden>
+        <span class="rec-painel__marca" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2.5a7 7 0 0 1 7 7c0 5.3-7 11.5-7 11.5z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+        <p class="rec-painel__fato"><strong>Tier III</strong><span>datacenter no Brasil</span></p>
+        <h3>Servidores no Brasil</h3>
         <p>Datacenter nacional com infraestrutura Tier III: menos latência para o seu público e dados sob a LGPD.</p>
-      </li>
-          </ul>
+        <span class="rec-painel__incluso"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Incluso em todos os planos</span>
+      </div>
+          </div>
   </div>
 </section>
+
 
 <section class="secao  comparativo" id="comparativo" aria-labelledby="comparativo-titulo">
   <div class="container">
@@ -896,6 +937,6 @@
   </span>
 </a>
 
-<script src="/erehost-site-preview/assets/js/site.js?v=1794436738" defer></script>
+<script src="/erehost-site-preview/assets/js/site.js?v=1794438822" defer></script>
 <div style="position:fixed;left:12px;bottom:12px;z-index:999;background:#1f1a17;color:#fff;font:600 12px/1 Inter,system-ui,sans-serif;padding:8px 12px;border-radius:999px;opacity:.85">Prévia de layout, não é o site oficial</div></body>
 </html>

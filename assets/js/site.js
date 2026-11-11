@@ -153,8 +153,8 @@
       a.addEventListener('click', () => seleciona(a));
       a.addEventListener('keydown', (e) => {
         let n = null;
-        if (e.key === 'ArrowRight') n = abas[(i + 1) % abas.length];
-        if (e.key === 'ArrowLeft') n = abas[(i - 1 + abas.length) % abas.length];
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') n = abas[(i + 1) % abas.length];
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') n = abas[(i - 1 + abas.length) % abas.length];
         if (e.key === 'Home') n = abas[0];
         if (e.key === 'End') n = abas[abas.length - 1];
         if (n) { e.preventDefault(); seleciona(n, true); }
