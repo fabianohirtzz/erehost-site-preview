@@ -1,195 +1,195 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hospedagem Cloud com NVMe e recursos dedicados | EreHost</title>
-<meta name="description" content="Hospedagem Cloud no Brasil com CPU e RAM dedicadas, armazenamento NVMe, Redis, backups diários e suporte prioritário. Para e-commerce e sites de alto tráfego.">
-<meta name="robots" content="noindex, nofollow">
-<link rel="canonical" href="https://erehost.com.br/hospedagem-cloud">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="EreHost">
-<meta property="og:title" content="Hospedagem Cloud com NVMe e recursos dedicados | EreHost">
-<meta property="og:description" content="Hospedagem Cloud no Brasil com CPU e RAM dedicadas, armazenamento NVMe, Redis, backups diários e suporte prioritário. Para e-commerce e sites de alto tráfego.">
-<meta property="og:url" content="https://erehost.com.br/hospedagem-cloud">
-<meta property="og:image" content="https://erehost.com.br/assets/img/og.png">
-<meta name="theme-color" content="#ff7b00">
-<link rel="icon" href="/erehost-site-preview/assets/img/logo/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/erehost-site-preview/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/erehost-site-preview/assets/fonts/inter-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/erehost-site-preview/assets/css/site.css?v=1794855056">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"EreHost","legalName":"EreHost Hospedagem de Site LTDA","url":"https://erehost.com.br","logo":"https://erehost.com.br/assets/img/logo/erehost.svg","taxID":"48.516.019/0001-11","address":{"@type":"PostalAddress","addressLocality":"Erechim","addressRegion":"RS","addressCountry":"BR"},"contactPoint":{"@type":"ContactPoint","telephone":"+5554993703696","contactType":"customer service","availableLanguage":"Portuguese"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://erehost.com.br/"},{"@type":"ListItem","position":2,"name":"Hospedagem Cloud","item":"https://erehost.com.br/hospedagem-cloud"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Hospedagem Cloud EreHost","description":"Hospedagem Cloud no Brasil com CPU e RAM dedicadas, armazenamento NVMe, Redis, backups diários e suporte prioritário. Para e-commerce e sites de alto tráfego.","brand":{"@type":"Brand","name":"EreHost"},"offers":{"@type":"AggregateOffer","priceCurrency":"BRL","lowPrice":"90.93","highPrice":"230.93","offerCount":3,"offers":[{"@type":"Offer","name":"Cloud Starter","price":"90.93","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-cloud#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Premium","price":"153.86","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-cloud#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Enterprise","price":"230.93","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-cloud#planos","availability":"https://schema.org/InStock"}]}}</script>
-</head>
-<body class="">
-<a class="pular" href="#conteudo">Pular para o conteúdo</a>
-
-
-<div class="status" data-status>
-  <div class="container status__in">
-    <p class="status__links">
-      <a href="https://ajuda.erehost.com.br/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>Central de Ajuda</a>
-      <a href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20EreHost%20e%20quero%20falar%20sobre%20hospedagem." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>(54) 99370-3696</a>
-    </p>
-    <p class="status__info">
-      <a href="https://status.erehost.com.br/" class="status__vivo" target="_blank" rel="noopener"><span class="pulso" aria-hidden="true"></span>Status dos serviços</a>
-    </p>
-  </div>
-</div>
-
-<header class="dock" data-dock>
-  <nav class="dock__barra" aria-label="Principal">
-    <a class="dock__logo" href="/erehost-site-preview/" aria-label="EreHost, página inicial">
-      <img src="/erehost-site-preview/assets/img/logo/erehost.svg" alt="EreHost" width="127" height="28">
-    </a>
-
-    <div class="dock__nav" data-dock-menu>
-    <span class="dock__indicador" aria-hidden="true" data-indicador></span>
-    <ul class="dock__menu">
-      <li class="dock__item dock__item--mega">
-        <button class="dock__link" type="button" aria-expanded="false" aria-controls="mega-hospedagem" data-mega-botao aria-current="page">
-          Hospedagem <svg class="ic ic--chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>        </button>
-        <div class="mega" id="mega-hospedagem" data-mega hidden>
-          <ul class="mega__lista">
-                        <li>
-              <a class="mega__produto" href="/erehost-site-preview/hospedagem-de-sites">
-                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span>
-                <span class="mega__texto">
-                  <strong>Hospedagem de Sites</strong>
-                  <span>Rápida e segura para o seu negócio</span>
-                </span>
-                                <span class="mega__preco"><small>a partir de</small>R$ 24,90<small>/mês</small></span>
-                              </a>
-            </li>
-                        <li>
-              <a class="mega__produto" href="/erehost-site-preview/hospedagem-wordpress">
-                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>
-                <span class="mega__texto">
-                  <strong>Hospedagem WordPress</strong>
-                  <span>LiteSpeed, Redis e Elementor PRO</span>
-                </span>
-                                <span class="mega__preco"><small>a partir de</small>R$ 24,90<small>/mês</small></span>
-                              </a>
-            </li>
-                        <li>
-              <a class="mega__produto" href="/erehost-site-preview/hospedagem-cloud" aria-current="page">
-                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 7.9H7z"/></svg></span>
-                <span class="mega__texto">
-                  <strong>Hospedagem Cloud</strong>
-                  <span>Recursos dedicados em NVMe</span>
-                </span>
-                                <span class="mega__preco"><small>a partir de</small>R$ 90,93<small>/mês</small></span>
-                              </a>
-            </li>
-                        <li>
-              <a class="mega__produto" href="/erehost-site-preview/agencias">
-                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
-                <span class="mega__texto">
-                  <strong>Para Agências</strong>
-                  <span>200+ sites com gerente de contas</span>
-                </span>
-                              </a>
-            </li>
-                      </ul>
-          <div class="mega__migra">
-            <p class="mega__migra-titulo">Migração<br>gratuita</p>
-            <p class="mega__migra-texto">A gente leva seu site para a EreHost em até 24 horas, sem custo e sem dor de cabeça.</p>
-            <a class="botao botao--p botao--p-sm" href="/erehost-site-preview/migracao-gratuita">Migrar meu site <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <img class="mega__migra-corgi" src="/erehost-site-preview/assets/img/mascote/corgi-sentado.svg" alt="" width="84" height="170" loading="lazy">
-          </div>
-        </div>
-      </li>
-            <li class="dock__item"><a class="dock__link" href="/erehost-site-preview/agencias">Agências</a></li>
-            <li class="dock__item"><a class="dock__link" href="/erehost-site-preview/compare">Compare</a></li>
-            <li class="dock__item"><a class="dock__link" href="/erehost-site-preview/marcas-que-confiam">Clientes</a></li>
-          </ul>
-    </div>
-
-    <div class="dock__acoes">
-      <a class="dock__entrar" href="https://painel.erehost.com.br/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Entrar</span></a>
-      <a class="botao botao--p" href="/erehost-site-preview/#planos">Ver planos</a>
-    </div>
-  </nav>
-</header>
-
-<nav class="barra-mobile" aria-label="Atalhos">
-  <a href="/erehost-site-preview/#planos"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>Planos</span></a>
-  <a href="https://ajuda.erehost.com.br/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg><span>Ajuda</span></a>
-  <a href="https://painel.erehost.com.br/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Entrar</span></a>
-  <button type="button" aria-controls="gaveta" aria-expanded="false" data-gaveta-abrir><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>Menu</span></button>
-</nav>
-
-<div class="gaveta" id="gaveta" role="dialog" aria-modal="true" aria-label="Menu" hidden data-gaveta>
-  <div class="gaveta__fundo" data-gaveta-fechar></div>
-  <div class="gaveta__painel" tabindex="-1">
-    <div class="gaveta__puxador" aria-hidden="true"></div>
-    <div class="gaveta__topo">
-      <img src="/erehost-site-preview/assets/img/logo/erehost.svg" alt="EreHost" width="109" height="24">
-      <button type="button" class="gaveta__x" aria-label="Fechar menu" data-gaveta-fechar><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    </div>
-    <p class="gaveta__titulo">Hospedagem</p>
-    <ul class="gaveta__produtos">
-            <li><a href="/erehost-site-preview/hospedagem-de-sites"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><span><strong>Hospedagem de Sites</strong><small>a partir de R$ 24,90/mês</small></span></a></li>
-            <li><a href="/erehost-site-preview/hospedagem-wordpress"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span><span><strong>Hospedagem WordPress</strong><small>a partir de R$ 24,90/mês</small></span></a></li>
-            <li><a href="/erehost-site-preview/hospedagem-cloud"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 7.9H7z"/></svg></span><span><strong>Hospedagem Cloud</strong><small>a partir de R$ 90,93/mês</small></span></a></li>
-            <li><a href="/erehost-site-preview/agencias"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span><strong>Para Agências</strong></span></a></li>
-          </ul>
-    <ul class="gaveta__links">
-      <li><a href="/erehost-site-preview/compare">Compare com outras hospedagens</a></li>
-      <li><a href="/erehost-site-preview/marcas-que-confiam">Clientes</a></li>
-      <li><a href="https://status.erehost.com.br/" target="_blank" rel="noopener"><span class="pulso" aria-hidden="true"></span>Status dos serviços</a></li>
-    </ul>
-    <a class="botao botao--p botao--bloco" href="/erehost-site-preview/#planos" data-gaveta-fechar>Ver planos</a>
-  </div>
-</div>
-
-<main id="conteudo">
-
-<!-- HERO DO PRODUTO -->
-<section class="phero">
-  <div class="container phero__grade">
-    <div class="phero__texto">
-      <nav class="migalha revela" aria-label="Você está em">
-        <ol><li><a href="/erehost-site-preview/">Início</a></li><li aria-current="page">Hospedagem Cloud</li></ol>
-      </nav>
-      <h1 class="phero__titulo revela">Hospedagem Cloud com recursos <mark>dedicados</mark> e armazenamento NVMe</h1>
-      <p class="phero__sub revela">CPU e memória reservadas para o seu projeto, discos NVMe, Redis para cache de objetos, backups diários e suporte prioritário. Para quem não pode ficar lento em dia de pico.</p>
-            <p class="phero__preco revela"><span>a partir de</span><strong>R$ 90,93</strong><span>/mês</span></p>
-            <div class="hero__ctas revela">
-        <a class="botao botao--p botao--g" href="#planos">Ver planos <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="botao botao--fantasma botao--g" href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Hospedagem%20Cloud%20da%20EreHost." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>Falar no WhatsApp</a>
-      </div>
-      <ul class="phero__destaques revela">
-        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Armazenamento NVMe</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Backups diários</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Redis incluso</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Suporte prioritário</li>      </ul>
-    </div>
-
-    <!-- Hospedagem Cloud: card do servidor (arte original do cloud.ai), animado -->
-<div class="hv hv--servidor revela" aria-hidden="true">
-  <div class="hv-srv__painel"></div>
-  <img class="hv-srv__cena" src="/erehost-site-preview/assets/img/cenas/corgi-servidor.svg" alt="" width="282" height="434">
-  <div class="hv-chip hv-chip--c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><span><strong>4 a 8 núcleos</strong><small>CPU dedicada</small></span></div>
-  <div class="hv-chip hv-chip--d"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span><strong>NVMe</strong><small>até 300 GB</small></span></div>
-  <div class="hv-chip hv-chip--e"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 7v5c0 1.7 3.6 3 8 3M4 12v5c0 1.7 3.6 3 8 3"/><path d="M17 14l-2 4h4l-2 4"/></svg><span><strong>Redis</strong><small>cache de objetos</small></span></div>
-</div>
-
-  </div>
-</section>
-
-<!-- TECNOLOGIAS -->
-<section class="tecs" aria-label="Tecnologias da infraestrutura">
-  <div class="container tecs__in">
-    <p>Tecnologia de ponta em todos os servidores</p>
-    <ul>
-      <li><img src="/erehost-site-preview/assets/img/tecnologias/cpanel.png" alt="cPanel" width="125" height="35" loading="lazy"></li>
-      <li><img src="/erehost-site-preview/assets/img/tecnologias/litespeed.png" alt="LiteSpeed" width="125" height="35" loading="lazy"></li>
-      <li><img src="/erehost-site-preview/assets/img/tecnologias/cloudlinux.png" alt="CloudLinux" width="125" height="35" loading="lazy"></li>
-      <li><img src="/erehost-site-preview/assets/img/tecnologias/imunify.png" alt="Imunify360" width="125" height="35" loading="lazy"></li>
-    </ul>
-  </div>
-</section>
-
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hospedagem Cloud com NVMe e recursos dedicados | EreHost</title>
+<meta name="description" content="Hospedagem Cloud no Brasil com CPU e RAM dedicadas, armazenamento NVMe, Redis, backups diários e suporte prioritário. Para e-commerce e sites de alto tráfego.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://erehost.com.br/hospedagem-cloud">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="EreHost">
+<meta property="og:title" content="Hospedagem Cloud com NVMe e recursos dedicados | EreHost">
+<meta property="og:description" content="Hospedagem Cloud no Brasil com CPU e RAM dedicadas, armazenamento NVMe, Redis, backups diários e suporte prioritário. Para e-commerce e sites de alto tráfego.">
+<meta property="og:url" content="https://erehost.com.br/hospedagem-cloud">
+<meta property="og:image" content="https://erehost.com.br/assets/img/og.png">
+<meta name="theme-color" content="#ff7b00">
+<link rel="icon" href="/erehost-site-preview/assets/img/logo/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/erehost-site-preview/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/erehost-site-preview/assets/fonts/inter-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/erehost-site-preview/assets/css/site.css?v=1794869407">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"EreHost","legalName":"EreHost Hospedagem de Site LTDA","url":"https://erehost.com.br","logo":"https://erehost.com.br/assets/img/logo/erehost.svg","taxID":"48.516.019/0001-11","address":{"@type":"PostalAddress","addressLocality":"Erechim","addressRegion":"RS","addressCountry":"BR"},"contactPoint":{"@type":"ContactPoint","telephone":"+5554993703696","contactType":"customer service","availableLanguage":"Portuguese"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://erehost.com.br/"},{"@type":"ListItem","position":2,"name":"Hospedagem Cloud","item":"https://erehost.com.br/hospedagem-cloud"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Hospedagem Cloud EreHost","description":"Hospedagem Cloud no Brasil com CPU e RAM dedicadas, armazenamento NVMe, Redis, backups diários e suporte prioritário. Para e-commerce e sites de alto tráfego.","brand":{"@type":"Brand","name":"EreHost"},"offers":{"@type":"AggregateOffer","priceCurrency":"BRL","lowPrice":"90.93","highPrice":"230.93","offerCount":3,"offers":[{"@type":"Offer","name":"Cloud Starter","price":"90.93","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-cloud#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Premium","price":"153.86","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-cloud#planos","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Cloud Enterprise","price":"230.93","priceCurrency":"BRL","url":"https://erehost.com.br/hospedagem-cloud#planos","availability":"https://schema.org/InStock"}]}}</script>
+</head>
+<body class="">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+
+<div class="status" data-status>
+  <div class="container status__in">
+    <p class="status__links">
+      <a href="https://ajuda.erehost.com.br/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>Central de Ajuda</a>
+      <a href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20EreHost%20e%20quero%20falar%20sobre%20hospedagem." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>(54) 99370-3696</a>
+    </p>
+    <p class="status__info">
+      <a href="https://status.erehost.com.br/" class="status__vivo" target="_blank" rel="noopener"><span class="pulso" aria-hidden="true"></span>Status dos serviços</a>
+    </p>
+  </div>
+</div>
+
+<header class="dock" data-dock>
+  <nav class="dock__barra" aria-label="Principal">
+    <a class="dock__logo" href="/erehost-site-preview/" aria-label="EreHost, página inicial">
+      <img src="/erehost-site-preview/assets/img/logo/erehost.svg" alt="EreHost" width="127" height="28">
+    </a>
+
+    <div class="dock__nav" data-dock-menu>
+    <span class="dock__indicador" aria-hidden="true" data-indicador></span>
+    <ul class="dock__menu">
+      <li class="dock__item dock__item--mega">
+        <button class="dock__link" type="button" aria-expanded="false" aria-controls="mega-hospedagem" data-mega-botao aria-current="page">
+          Hospedagem <svg class="ic ic--chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>        </button>
+        <div class="mega" id="mega-hospedagem" data-mega hidden>
+          <ul class="mega__lista">
+                        <li>
+              <a class="mega__produto" href="/erehost-site-preview/hospedagem-de-sites">
+                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span>
+                <span class="mega__texto">
+                  <strong>Hospedagem de Sites</strong>
+                  <span>Rápida e segura para o seu negócio</span>
+                </span>
+                                <span class="mega__preco"><small>a partir de</small>R$ 24,90<small>/mês</small></span>
+                              </a>
+            </li>
+                        <li>
+              <a class="mega__produto" href="/erehost-site-preview/hospedagem-wordpress">
+                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>
+                <span class="mega__texto">
+                  <strong>Hospedagem WordPress</strong>
+                  <span>LiteSpeed, Redis e Elementor PRO</span>
+                </span>
+                                <span class="mega__preco"><small>a partir de</small>R$ 24,90<small>/mês</small></span>
+                              </a>
+            </li>
+                        <li>
+              <a class="mega__produto" href="/erehost-site-preview/hospedagem-cloud" aria-current="page">
+                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 7.9H7z"/></svg></span>
+                <span class="mega__texto">
+                  <strong>Hospedagem Cloud</strong>
+                  <span>Recursos dedicados em NVMe</span>
+                </span>
+                                <span class="mega__preco"><small>a partir de</small>R$ 90,93<small>/mês</small></span>
+                              </a>
+            </li>
+                        <li>
+              <a class="mega__produto" href="/erehost-site-preview/agencias">
+                <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+                <span class="mega__texto">
+                  <strong>Para Agências</strong>
+                  <span>100+ sites com gerente de contas</span>
+                </span>
+                              </a>
+            </li>
+                      </ul>
+          <div class="mega__migra">
+            <p class="mega__migra-titulo">Migração<br>gratuita</p>
+            <p class="mega__migra-texto">A gente leva seu site para a EreHost em até 24 horas, sem custo e sem dor de cabeça.</p>
+            <a class="botao botao--p botao--p-sm" href="/erehost-site-preview/migracao-gratuita">Migrar meu site <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <img class="mega__migra-corgi" src="/erehost-site-preview/assets/img/mascote/corgi-sentado.svg" alt="" width="84" height="170" loading="lazy">
+          </div>
+        </div>
+      </li>
+            <li class="dock__item"><a class="dock__link" href="/erehost-site-preview/agencias">Agências</a></li>
+            <li class="dock__item"><a class="dock__link" href="/erehost-site-preview/compare">Compare</a></li>
+            <li class="dock__item"><a class="dock__link" href="/erehost-site-preview/marcas-que-confiam">Clientes</a></li>
+          </ul>
+    </div>
+
+    <div class="dock__acoes">
+      <a class="dock__entrar" href="https://painel.erehost.com.br/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Entrar</span></a>
+      <a class="botao botao--p" href="/erehost-site-preview/#planos">Ver planos</a>
+    </div>
+  </nav>
+</header>
+
+<nav class="barra-mobile" aria-label="Atalhos">
+  <a href="/erehost-site-preview/#planos"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg><span>Planos</span></a>
+  <a href="https://ajuda.erehost.com.br/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg><span>Ajuda</span></a>
+  <a href="https://painel.erehost.com.br/"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Entrar</span></a>
+  <button type="button" aria-controls="gaveta" aria-expanded="false" data-gaveta-abrir><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>Menu</span></button>
+</nav>
+
+<div class="gaveta" id="gaveta" role="dialog" aria-modal="true" aria-label="Menu" hidden data-gaveta>
+  <div class="gaveta__fundo" data-gaveta-fechar></div>
+  <div class="gaveta__painel" tabindex="-1">
+    <div class="gaveta__puxador" aria-hidden="true"></div>
+    <div class="gaveta__topo">
+      <img src="/erehost-site-preview/assets/img/logo/erehost.svg" alt="EreHost" width="109" height="24">
+      <button type="button" class="gaveta__x" aria-label="Fechar menu" data-gaveta-fechar><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <p class="gaveta__titulo">Hospedagem</p>
+    <ul class="gaveta__produtos">
+            <li><a href="/erehost-site-preview/hospedagem-de-sites"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><span><strong>Hospedagem de Sites</strong><small>a partir de R$ 24,90/mês</small></span></a></li>
+            <li><a href="/erehost-site-preview/hospedagem-wordpress"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span><span><strong>Hospedagem WordPress</strong><small>a partir de R$ 24,90/mês</small></span></a></li>
+            <li><a href="/erehost-site-preview/hospedagem-cloud"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 7.9H7z"/></svg></span><span><strong>Hospedagem Cloud</strong><small>a partir de R$ 90,93/mês</small></span></a></li>
+            <li><a href="/erehost-site-preview/agencias"><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><span><strong>Para Agências</strong></span></a></li>
+          </ul>
+    <ul class="gaveta__links">
+      <li><a href="/erehost-site-preview/compare">Compare com outras hospedagens</a></li>
+      <li><a href="/erehost-site-preview/marcas-que-confiam">Clientes</a></li>
+      <li><a href="https://status.erehost.com.br/" target="_blank" rel="noopener"><span class="pulso" aria-hidden="true"></span>Status dos serviços</a></li>
+    </ul>
+    <a class="botao botao--p botao--bloco" href="/erehost-site-preview/#planos" data-gaveta-fechar>Ver planos</a>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- HERO DO PRODUTO -->
+<section class="phero">
+  <div class="container phero__grade">
+    <div class="phero__texto">
+      <nav class="migalha revela" aria-label="Você está em">
+        <ol><li><a href="/erehost-site-preview/">Início</a></li><li aria-current="page">Hospedagem Cloud</li></ol>
+      </nav>
+      <h1 class="phero__titulo revela">Hospedagem Cloud com recursos <mark>dedicados</mark> e armazenamento NVMe</h1>
+      <p class="phero__sub revela">CPU e memória reservadas para o seu projeto, discos NVMe, Redis para cache de objetos, backups diários e suporte prioritário. Para quem não pode ficar lento em dia de pico.</p>
+            <p class="phero__preco revela"><span>a partir de</span><strong>R$ 90,93</strong><span>/mês</span></p>
+            <div class="hero__ctas revela">
+        <a class="botao botao--p botao--g" href="#planos">Ver planos <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="botao botao--fantasma botao--g" href="https://wa.me/5554993703696?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20a%20Hospedagem%20Cloud%20da%20EreHost." target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2L9 8.5z"/></svg>Falar no WhatsApp</a>
+      </div>
+      <ul class="phero__destaques revela">
+        <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Armazenamento NVMe</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Backups diários</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Redis incluso</li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Suporte prioritário</li>      </ul>
+    </div>
+
+    <!-- Hospedagem Cloud: card do servidor (arte original do cloud.ai), animado -->
+<div class="hv hv--servidor revela" aria-hidden="true">
+  <div class="hv-srv__painel"></div>
+  <img class="hv-srv__cena" src="/erehost-site-preview/assets/img/cenas/corgi-servidor.svg" alt="" width="282" height="434">
+  <div class="hv-chip hv-chip--c"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><span><strong>4 a 8 núcleos</strong><small>CPU dedicada</small></span></div>
+  <div class="hv-chip hv-chip--d"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span><strong>NVMe</strong><small>até 300 GB</small></span></div>
+  <div class="hv-chip hv-chip--e"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 7v5c0 1.7 3.6 3 8 3M4 12v5c0 1.7 3.6 3 8 3"/><path d="M17 14l-2 4h4l-2 4"/></svg><span><strong>Redis</strong><small>cache de objetos</small></span></div>
+</div>
+
+  </div>
+</section>
+
+<!-- TECNOLOGIAS -->
+<section class="tecs" aria-label="Tecnologias da infraestrutura">
+  <div class="container tecs__in">
+    <p>Tecnologia de ponta em todos os servidores</p>
+    <ul>
+      <li><img src="/erehost-site-preview/assets/img/tecnologias/cpanel.png" alt="cPanel" width="125" height="35" loading="lazy"></li>
+      <li><img src="/erehost-site-preview/assets/img/tecnologias/litespeed.png" alt="LiteSpeed" width="125" height="35" loading="lazy"></li>
+      <li class="tecs__txt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>Hospedagem Dedicada</li>
+      <li class="tecs__txt"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>Proteção contra malware em tempo real</li>
+    </ul>
+  </div>
+</section>
+
 <section class="planos secao secao--creme" id="planos" aria-labelledby="planos-titulo">
   <div class="container">
     <header class="secao__cab secao__cab--centro">
@@ -203,21 +203,16 @@
                     <li class="plano plano--destaque">
             <div class="plano__topo">
               <h3 class="plano__nome">Cloud Starter</h3>
-              <span class="selo selo--escuro">Mais escolhido</span>
-                          </div>
+                            <span class="selo selo--escuro">Mais escolhido</span>            </div>
             <p class="plano__desc">Recursos dedicados para crescer</p>
             <p class="plano__preco">
               <s><span class="sr">De </span>R$ 129,90</s>              <span class="plano__valor"><small>R$</small>90<span>,93</span><small>/mês</small></span>
             </p>
             <p class="plano__ciclo">12 meses por R$ 1.091,16<br>Renovação por R$ 129,90/mês</p>
             <a class="botao botao--escuro botao--bloco" href="https://painel.erehost.com.br/assinar/hospedagem/cloud-starter?billingcycle=annually&amp;promocode=30OFF" rel="noopener">Contratar Cloud Starter</a>
-            <dl class="plano__specs">
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><dt>Disco</dt><dd>100 GB NVMe</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><dt>Sites</dt><dd>Ilimitados</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><dt>CPU</dt><dd>4</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg><dt>RAM</dt><dd>6 GB</dd></div>
-            </dl>
-                        <ul class="plano__ferr" aria-label="Ferramentas">
+                        <dl class="plano__specs">
+              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><dt>Disco</dt><dd>100 GB NVMe</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><dt>Sites</dt><dd>Ilimitados</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><dt>CPU</dt><dd>4</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg><dt>RAM</dt><dd>6 GB</dd></div>            </dl>
+                                    <ul class="plano__ferr" aria-label="Ferramentas">
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/elementor.svg" alt="" width="22" height="22" loading="lazy"><span>Elementor PRO</span></li>
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/litespeed.svg" alt="" width="22" height="22" loading="lazy"><span>LiteSpeed</span></li>
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/redis.png" alt="" width="22" height="22" loading="lazy"><span>Redis</span></li>
@@ -229,20 +224,16 @@
                     <li class="plano">
             <div class="plano__topo">
               <h3 class="plano__nome">Cloud Premium</h3>
-              <span class="selo">30% OFF</span>            </div>
+                            <span class="selo">30% OFF</span>            </div>
             <p class="plano__desc">Para e-commerce e portais</p>
             <p class="plano__preco">
               <s><span class="sr">De </span>R$ 219,80</s>              <span class="plano__valor"><small>R$</small>153<span>,86</span><small>/mês</small></span>
             </p>
             <p class="plano__ciclo">12 meses por R$ 1.846,32<br>Renovação por R$ 219,80/mês</p>
             <a class="botao botao--p botao--bloco" href="https://painel.erehost.com.br/assinar/hospedagem/cloud-premium?billingcycle=annually&amp;promocode=30OFF" rel="noopener">Contratar Cloud Premium</a>
-            <dl class="plano__specs">
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><dt>Disco</dt><dd>200 GB NVMe</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><dt>Sites</dt><dd>Ilimitados</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><dt>CPU</dt><dd>6</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg><dt>RAM</dt><dd>8 GB</dd></div>
-            </dl>
-                        <ul class="plano__ferr" aria-label="Ferramentas">
+                        <dl class="plano__specs">
+              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><dt>Disco</dt><dd>200 GB NVMe</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><dt>Sites</dt><dd>Ilimitados</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><dt>CPU</dt><dd>6</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg><dt>RAM</dt><dd>8 GB</dd></div>            </dl>
+                                    <ul class="plano__ferr" aria-label="Ferramentas">
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/elementor.svg" alt="" width="22" height="22" loading="lazy"><span>Elementor PRO</span></li>
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/litespeed.svg" alt="" width="22" height="22" loading="lazy"><span>LiteSpeed</span></li>
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/redis.png" alt="" width="22" height="22" loading="lazy"><span>Redis</span></li>
@@ -254,20 +245,16 @@
                     <li class="plano">
             <div class="plano__topo">
               <h3 class="plano__nome">Cloud Enterprise</h3>
-              <span class="selo">30% OFF</span>            </div>
+                            <span class="selo">30% OFF</span>            </div>
             <p class="plano__desc">Alto tráfego e operações críticas</p>
             <p class="plano__preco">
               <s><span class="sr">De </span>R$ 329,90</s>              <span class="plano__valor"><small>R$</small>230<span>,93</span><small>/mês</small></span>
             </p>
             <p class="plano__ciclo">12 meses por R$ 2.771,16<br>Renovação por R$ 329,90/mês</p>
             <a class="botao botao--p botao--bloco" href="https://painel.erehost.com.br/assinar/hospedagem/cloud-enterprise?billingcycle=annually&amp;promocode=30OFF" rel="noopener">Contratar Cloud Enterprise</a>
-            <dl class="plano__specs">
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><dt>Disco</dt><dd>300 GB NVMe</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><dt>Sites</dt><dd>Ilimitados</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><dt>CPU</dt><dd>8</dd></div>
-              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg><dt>RAM</dt><dd>12 GB</dd></div>
-            </dl>
-                        <ul class="plano__ferr" aria-label="Ferramentas">
+                        <dl class="plano__specs">
+              <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><dt>Disco</dt><dd>300 GB NVMe</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><dt>Sites</dt><dd>Ilimitados</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><dt>CPU</dt><dd>8</dd></div><div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg><dt>RAM</dt><dd>12 GB</dd></div>            </dl>
+                                    <ul class="plano__ferr" aria-label="Ferramentas">
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/elementor.svg" alt="" width="22" height="22" loading="lazy"><span>Elementor PRO</span></li>
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/litespeed.svg" alt="" width="22" height="22" loading="lazy"><span>LiteSpeed</span></li>
                             <li class="ferr"><img src="/erehost-site-preview/assets/img/ferramentas/redis.png" alt="" width="22" height="22" loading="lazy"><span>Redis</span></li>
@@ -285,74 +272,74 @@
     </div>
       </div>
 </section>
-
-<!-- SOBRE + EM RESUMO (conteúdo para SEO e respostas de IA) -->
-<section class="secao sobre" aria-labelledby="sobre-titulo">
-  <div class="container sobre__grade">
-    <div class="sobre__texto">
-      <h2 id="sobre-titulo" class="secao__titulo">Quando vale a pena ir para a hospedagem cloud</h2>
-      <p>Na hospedagem tradicional, vários clientes dividem o mesmo processador e a mesma memória. Se um vizinho recebe um pico de acessos, todos sentem. Na Hospedagem Cloud da EreHost, CPU e RAM ficam reservadas para o seu plano.</p><p>Os discos são NVMe, muito mais rápidos que o SSD comum, e o Redis guarda as consultas ao banco de dados em memória. Para lojas WooCommerce, portais de notícias e sistemas com login, isso significa painel ágil e checkout que não trava.</p><p>Todos os planos Cloud incluem sites ilimitados, backups diários e suporte prioritário com especialistas. E a migração continua gratuita.</p>    </div>
-    <aside class="resumo" aria-labelledby="resumo-titulo">
-      <h3 id="resumo-titulo" class="resumo__titulo">Em resumo</h3>
-      <p class="resumo__lead">A Hospedagem Cloud da EreHost oferece CPU e memória dedicadas, armazenamento NVMe, Redis, sites ilimitados, backups diários e suporte prioritário, em servidores no Brasil, a partir de R$ 90,93 por mês.</p>
-      <dl class="resumo__fatos">
-        <div><dt>Preço inicial</dt><dd>R$ 90,93/mês</dd></div><div><dt>CPU</dt><dd>4 a 8 núcleos dedicados</dd></div><div><dt>Memória</dt><dd>6 GB a 12 GB</dd></div><div><dt>Armazenamento</dt><dd>100 GB a 300 GB NVMe</dd></div><div><dt>Redis</dt><dd>64 MB a 256 MB</dd></div><div><dt>Sites</dt><dd>Ilimitados</dd></div><div><dt>Backups</dt><dd>Diários</dd></div><div><dt>Suporte</dt><dd>Prioritário com especialistas</dd></div>      </dl>
-    </aside>
-  </div>
-  <div class="container">
-    <h3 class="ideal__titulo">Para quem é a Hospedagem Cloud da EreHost</h3>
-    <ul class="ideal">
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span><strong>E-commerce</strong><span>Lojas com catálogo grande, muitos pedidos e campanhas de tráfego pago.</span></li>
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><strong>Portais de notícias</strong><span>Picos de acesso sem queda: foi assim com o Agora no Vale, que hoje aguenta mais de 10x o volume de antes.</span></li>
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><strong>Agências e devs</strong><span>Vários sites de clientes com recursos garantidos e sites ilimitados.</span></li>
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><strong>Quem saiu da AWS</strong><span>Desempenho de nuvem sem a complexidade e a conta em dólar.</span></li>
-          </ul>
-  </div>
-</section>
-
-<!-- RECURSOS: layout próprio de cada página -->
-<!-- Cloud: ficha técnica com as faixas de recursos dedicados dos planos -->
-<section class="secao secao--creme rec-sec" aria-labelledby="recursos-titulo">
-  <div class="container">
-    <header class="rec-ficha__cab">
-      <h2 id="recursos-titulo" class="secao__titulo">Infraestrutura de nuvem, sem a complicação da nuvem</h2>
-      <p class="secao__sub">Recursos reservados para o seu plano, do Cloud Starter ao Cloud Enterprise. Sites ilimitados em todos.</p>
-    </header>
-    <ul class="ficha">
-            <li>
-        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>CPU dedicada</span>
-        <strong class="ficha__valor">4 a 8<small>núcleos</small></strong>
-        <span class="ficha__barras" aria-hidden="true">
-          <span style="--h:50%"><i></i><small>Starter</small></span><span style="--h:75%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
-      </li>
-            <li>
-        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg>Memória RAM</span>
-        <strong class="ficha__valor">6 a 12<small>GB</small></strong>
-        <span class="ficha__barras" aria-hidden="true">
-          <span style="--h:50%"><i></i><small>Starter</small></span><span style="--h:67%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
-      </li>
-            <li>
-        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Armazenamento NVMe</span>
-        <strong class="ficha__valor">100 a 300<small>GB</small></strong>
-        <span class="ficha__barras" aria-hidden="true">
-          <span style="--h:33%"><i></i><small>Starter</small></span><span style="--h:67%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
-      </li>
-            <li>
-        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 7v5c0 1.7 3.6 3 8 3M4 12v5c0 1.7 3.6 3 8 3"/><path d="M17 14l-2 4h4l-2 4"/></svg>Redis</span>
-        <strong class="ficha__valor">64 a 256<small>MB</small></strong>
-        <span class="ficha__barras" aria-hidden="true">
-          <span style="--h:25%"><i></i><small>Starter</small></span><span style="--h:50%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
-      </li>
-          </ul>
-    <ul class="ficha__inclusos">
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></span><span><strong>Backups diários</strong><small>uma cópia nova por dia</small></span></li>
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg></span><span><strong>Suporte prioritário</strong><small>com especialistas</small></span></li>
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><span><strong>Segurança total</strong><small>proteção ativa 24 horas</small></span></li>
-            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2.5a7 7 0 0 1 7 7c0 5.3-7 11.5-7 11.5z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span><strong>Servidores no Brasil</strong><small>datacenter no Brasil</small></span></li>
-          </ul>
-  </div>
-</section>
-
+
+<!-- SOBRE + EM RESUMO (conteúdo para SEO e respostas de IA) -->
+<section class="secao sobre" aria-labelledby="sobre-titulo">
+  <div class="container sobre__grade">
+    <div class="sobre__texto">
+      <h2 id="sobre-titulo" class="secao__titulo">Quando vale a pena ir para a hospedagem cloud</h2>
+      <p>Na hospedagem tradicional, vários clientes dividem o mesmo processador e a mesma memória. Se um vizinho recebe um pico de acessos, todos sentem. Na Hospedagem Cloud da EreHost, CPU e RAM ficam reservadas para o seu plano.</p><p>Os discos são NVMe, muito mais rápidos que o SSD comum, e o Redis guarda as consultas ao banco de dados em memória. Para lojas WooCommerce, portais de notícias e sistemas com login, isso significa painel ágil e checkout que não trava.</p><p>Todos os planos Cloud incluem sites ilimitados, backups diários e suporte prioritário com especialistas. E a migração continua gratuita.</p>    </div>
+    <aside class="resumo" aria-labelledby="resumo-titulo">
+      <h3 id="resumo-titulo" class="resumo__titulo">Em resumo</h3>
+      <p class="resumo__lead">A Hospedagem Cloud da EreHost oferece CPU e memória dedicadas, armazenamento NVMe, Redis, sites ilimitados, backups diários e suporte prioritário, em servidores no Brasil, a partir de R$ 90,93 por mês.</p>
+      <dl class="resumo__fatos">
+        <div><dt>Preço inicial</dt><dd>R$ 90,93/mês</dd></div><div><dt>CPU</dt><dd>4 a 8 núcleos dedicados</dd></div><div><dt>Memória</dt><dd>6 GB a 12 GB</dd></div><div><dt>Armazenamento</dt><dd>100 GB a 300 GB NVMe</dd></div><div><dt>Redis</dt><dd>64 MB a 256 MB</dd></div><div><dt>Sites</dt><dd>Ilimitados</dd></div><div><dt>Backups</dt><dd>Diários</dd></div><div><dt>Suporte</dt><dd>Prioritário com especialistas</dd></div>      </dl>
+    </aside>
+  </div>
+  <div class="container">
+    <h3 class="ideal__titulo">Para quem é a Hospedagem Cloud da EreHost</h3>
+    <ul class="ideal">
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span><strong>E-commerce</strong><span>Lojas com catálogo grande, muitos pedidos e campanhas de tráfego pago.</span></li>
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><strong>Portais de notícias</strong><span>Picos de acesso sem queda: foi assim com o Agora no Vale, que hoje aguenta mais de 10x o volume de antes.</span></li>
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span><strong>Agências e devs</strong><span>Vários sites de clientes com recursos garantidos e sites ilimitados.</span></li>
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><strong>Quem saiu da AWS</strong><span>Mais barato que a nuvem, com a mesma qualidade.</span></li>
+          </ul>
+  </div>
+</section>
+
+<!-- RECURSOS: layout próprio de cada página -->
+<!-- Cloud: ficha técnica com as faixas de recursos dedicados dos planos -->
+<section class="secao secao--creme rec-sec" aria-labelledby="recursos-titulo">
+  <div class="container">
+    <header class="rec-ficha__cab">
+      <h2 id="recursos-titulo" class="secao__titulo">Infraestrutura de nuvem, sem a complicação da nuvem</h2>
+      <p class="secao__sub">Recursos reservados para o seu plano, do Cloud Starter ao Cloud Enterprise. Sites ilimitados em todos.</p>
+    </header>
+    <ul class="ficha">
+            <li>
+        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>CPU dedicada</span>
+        <strong class="ficha__valor">4 a 8<small>núcleos</small></strong>
+        <span class="ficha__barras" aria-hidden="true">
+          <span style="--h:50%"><i></i><small>Starter</small></span><span style="--h:75%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
+      </li>
+            <li>
+        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M7 7v10M11 7v10M15 7v10M6 17v3M18 17v3M10 17v3M14 17v3"/></svg>Memória RAM</span>
+        <strong class="ficha__valor">6 a 12<small>GB</small></strong>
+        <span class="ficha__barras" aria-hidden="true">
+          <span style="--h:50%"><i></i><small>Starter</small></span><span style="--h:67%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
+      </li>
+            <li>
+        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Armazenamento NVMe</span>
+        <strong class="ficha__valor">100 a 300<small>GB</small></strong>
+        <span class="ficha__barras" aria-hidden="true">
+          <span style="--h:33%"><i></i><small>Starter</small></span><span style="--h:67%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
+      </li>
+            <li>
+        <span class="ficha__rot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z"/><path d="M4 7v5c0 1.7 3.6 3 8 3M4 12v5c0 1.7 3.6 3 8 3"/><path d="M17 14l-2 4h4l-2 4"/></svg>Redis</span>
+        <strong class="ficha__valor">64 a 256<small>MB</small></strong>
+        <span class="ficha__barras" aria-hidden="true">
+          <span style="--h:25%"><i></i><small>Starter</small></span><span style="--h:50%"><i></i><small>Premium</small></span><span style="--h:100%"><i></i><small>Enterprise</small></span>        </span>
+      </li>
+          </ul>
+    <ul class="ficha__inclusos">
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg></span><span><strong>Backups diários</strong><small>uma cópia nova por dia</small></span></li>
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M19.5 19a3 3 0 0 1-3 3H13"/></svg></span><span><strong>Suporte prioritário</strong><small>com especialistas</small></span></li>
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><span><strong>Segurança total</strong><small>proteção em tempo real</small></span></li>
+            <li><span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2.5a7 7 0 0 1 7 7c0 5.3-7 11.5-7 11.5z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span><strong>Servidores no Brasil</strong><small>datacenter no Brasil</small></span></li>
+          </ul>
+  </div>
+</section>
+
 <section class="secao iso-sec " aria-labelledby="iso-titulo">
   <div class="container">
     <header class="secao__cab secao__cab--centro">
@@ -372,7 +359,7 @@
     </figure>
   </div>
 </section>
-
+
 <section class="secao  comparativo" id="comparativo" aria-labelledby="comparativo-titulo">
   <div class="container">
     <header class="secao__cab secao__cab--centro">
@@ -401,8 +388,7 @@
                       </tr>
         </thead>
                 <tbody>
-          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Recursos</th></tr>
-                    <tr>
+          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Recursos</th></tr>                    <tr>
             <th scope="row">Armazenamento</th>
                         <td class="col-destaque">100 GB NVMe</td>
                         <td class="">200 GB NVMe</td>
@@ -440,8 +426,7 @@
                       </tr>
                   </tbody>
                 <tbody>
-          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Desempenho</th></tr>
-                    <tr>
+          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Desempenho</th></tr>                    <tr>
             <th scope="row">Desempenho</th>
                         <td class="col-destaque">10x</td>
                         <td class="">20x</td>
@@ -460,9 +445,8 @@
                         <td class="">256 MB Redis</td>
                       </tr>
                   </tbody>
-                        <tbody>
-          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Ferramentas</th></tr>
-                    <tr>
+                <tbody>
+          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Ferramentas</th></tr>                    <tr>
             <th scope="row"><span class="tabela__ferr"><img src="/erehost-site-preview/assets/img/ferramentas/elementor.svg" alt="" width="18" height="18" loading="lazy">Elementor PRO</span></th>
                         <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
                         <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
@@ -481,20 +465,31 @@
                         <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
                       </tr>
                   </tbody>
-                        <tbody>
-          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Incluso em todos</th></tr>
-                    <tr>
+                <tbody>
+          <tr class="tabela__grupo"><th scope="rowgroup" colspan="4">Incluso em todos</th></tr>                    <tr>
             <th scope="row">HTTPS ilimitado grátis</th>
-            <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>          </tr>
+                        <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                      </tr>
                     <tr>
             <th scope="row">WordPress gerenciado</th>
-            <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>          </tr>
+                        <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                      </tr>
                     <tr>
             <th scope="row">Backups diários</th>
-            <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>          </tr>
+                        <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                      </tr>
                     <tr>
             <th scope="row">Suporte prioritário com especialistas</th>
-            <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td><td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>          </tr>
+                        <td class="col-destaque"><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                        <td class=""><span class="sim"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><span class="sr">Incluso</span></td>
+                      </tr>
                   </tbody>
                 <tfoot>
           <tr>
@@ -508,7 +503,7 @@
     </div>
       </div>
 </section>
-
+
 <section class="secao migracao-sec" id="migracao" aria-labelledby="migracao-titulo">
   <div class="container">
     <div class="migracao">
@@ -528,7 +523,7 @@
     </div>
   </div>
 </section>
-
+
 <section class="secao faq-sec secao--creme" id="perguntas" aria-labelledby="faq-titulo">
   <div class="container faq">
     <div class="faq__lado">
@@ -576,40 +571,40 @@
   </div>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que significa recursos dedicados?","acceptedAnswer":{"@type":"Answer","text":"Que a CPU e a memória RAM do seu plano ficam reservadas para você. Picos de acesso de outros clientes não afetam o desempenho do seu site."}},{"@type":"Question","name":"Qual a diferença entre NVMe e SSD?","acceptedAnswer":{"@type":"Answer","text":"O NVMe é um tipo de armazenamento conectado direto ao barramento do servidor, com leitura e gravação várias vezes mais rápidas que o SSD comum. Banco de dados, imagens e buscas ficam mais ágeis."}},{"@type":"Question","name":"Quantos sites posso hospedar no plano Cloud?","acceptedAnswer":{"@type":"Answer","text":"Sites ilimitados em todos os planos Cloud. O limite prático é o dos recursos do plano: CPU, memória e armazenamento."}},{"@type":"Question","name":"Os backups são diários mesmo?","acceptedAnswer":{"@type":"Answer","text":"Sim. Nos planos Cloud é feita uma cópia nova todos os dias e o suporte restaura o site quando você precisar."}},{"@type":"Question","name":"Para que serve o Redis?","acceptedAnswer":{"@type":"Answer","text":"O Redis guarda em memória as consultas mais frequentes ao banco de dados. No WordPress e no WooCommerce, isso reduz o tempo de resposta em até 3 vezes, principalmente no painel e no checkout."}},{"@type":"Question","name":"Estou na AWS ou em um VPS. Vale a pena migrar?","acceptedAnswer":{"@type":"Answer","text":"Para a maioria dos sites, sim: você mantém desempenho de nuvem sem administrar servidor, sem conta em dólar e com suporte humano em português. A Astrus migrou da Amazon AWS e sentiu a diferença logo de cara."}},{"@type":"Question","name":"A migração para o Cloud é cobrada?","acceptedAnswer":{"@type":"Answer","text":"Não. Em novas contratações do Cloud, a migração é gratuita para até 15 GB de dados e feita pela nossa equipe, normalmente em menos de 24 horas."}},{"@type":"Question","name":"Posso aumentar os recursos depois?","acceptedAnswer":{"@type":"Answer","text":"Pode. É só subir para o Cloud Premium ou o Cloud Enterprise pelo painel do cliente ou com o suporte, sem precisar migrar de novo."}}]}</script>
 </section>
-
-<!-- CONHEÇA TAMBÉM (links internos) -->
-<section class="secao cruzado-sec" aria-labelledby="cruzado-titulo">
-  <div class="container">
-    <h2 id="cruzado-titulo" class="secao__titulo cruzado__titulo">Conheça também</h2>
-    <ul class="cruzado">
-            <li>
-        <a class="cruzado__card" href="/erehost-site-preview/hospedagem-wordpress">
-          <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>
-          <strong>Hospedagem WordPress</strong>
-          <span>LiteSpeed Cache, PHP 8.5 e Elementor PRO.</span>
-          <span class="cruzado__rodape"><span>a partir de <b>R$ 24,90/mês</b></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-      </li>
-            <li>
-        <a class="cruzado__card" href="/erehost-site-preview/agencias">
-          <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
-          <strong>Hospedagem para Agências</strong>
-          <span>100 ou 200 sites com gerente de contas.</span>
-          <span class="cruzado__rodape"><span></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-      </li>
-            <li>
-        <a class="cruzado__card" href="/erehost-site-preview/compare">
-          <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span>
-          <strong>EreHost vs concorrência</strong>
-          <span>O dossiê anti-hospedagem-mequetrefe.</span>
-          <span class="cruzado__rodape"><span></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </a>
-      </li>
-          </ul>
-  </div>
-</section>
-
+
+<!-- CONHEÇA TAMBÉM (links internos) -->
+<section class="secao cruzado-sec" aria-labelledby="cruzado-titulo">
+  <div class="container">
+    <h2 id="cruzado-titulo" class="secao__titulo cruzado__titulo">Conheça também</h2>
+    <ul class="cruzado">
+            <li>
+        <a class="cruzado__card" href="/erehost-site-preview/hospedagem-wordpress">
+          <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>
+          <strong>Hospedagem WordPress</strong>
+          <span>LiteSpeed Cache, PHP 8.5 e Elementor PRO.</span>
+          <span class="cruzado__rodape"><span>a partir de <b>R$ 24,90/mês</b></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+            <li>
+        <a class="cruzado__card" href="/erehost-site-preview/agencias">
+          <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+          <strong>Hospedagem para Agências</strong>
+          <span>100+ sites com gerente de contas.</span>
+          <span class="cruzado__rodape"><span></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+            <li>
+        <a class="cruzado__card" href="/erehost-site-preview/compare">
+          <span class="pastilha"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span>
+          <strong>EreHost vs concorrência</strong>
+          <span>O dossiê anti-hospedagem-mequetrefe.</span>
+          <span class="cruzado__rodape"><span></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+          </ul>
+  </div>
+</section>
+
 </main>
 
 <footer class="rodape">
